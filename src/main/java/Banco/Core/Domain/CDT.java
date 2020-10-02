@@ -12,17 +12,15 @@ public class CDT implements IServicioFinanciero{
     private double Saldo; //ValorCDT + intereses
     private int termino;   // 1=TRIMESTRAL; 2= SEMESTRAL; 3= ANUAL
     boolean consignado;
-    private Fecha fecha;
-    
+    private Date fecha;
     private List<MovimientosBancarios> _movimientos;
     
     public CDT() {
-        fecha = new Fecha();
         _movimientos = new ArrayList<>();
         consignado=false;
     }
 
-    public CDT(String numero, double valorCDT, int termino, Fecha fecha) {
+    public CDT(String numero, double valorCDT, int termino, Date fecha) {
         this.numero = numero;
         this.valorCDT = valorCDT;
         this.termino = termino;
@@ -88,11 +86,11 @@ public class CDT implements IServicioFinanciero{
         this.termino = termino;
     }
 
-    public Fecha getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(Fecha fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
     
