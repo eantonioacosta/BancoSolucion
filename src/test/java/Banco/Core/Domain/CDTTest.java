@@ -181,28 +181,5 @@ public class CDTTest {
     /**
      * Test of getFecha method, of class CDT.
      */
-    @Test
-    public void testGetFecha() {
-        System.out.println("getFecha");
-        CDT instance = new CDT();
-        Fecha expResult = null;
-        Fecha result = instance.getFecha();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setFecha method, of class CDT.
-     */
-    @Test
-    public void testSetFecha() {
-        System.out.println("setFecha");
-        Fecha fecha = null;
-        CDT instance = new CDT();
-        instance.setFecha(fecha);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
     
 }
